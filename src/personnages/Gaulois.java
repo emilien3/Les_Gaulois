@@ -25,7 +25,6 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
-	
 	public void parler(String texte) {
 		System.out.println(prendreParole() +  texte);
 	}
@@ -37,7 +36,7 @@ public class Gaulois {
 	
 	
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
+		System.out.println( nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 
@@ -50,10 +49,9 @@ public class Gaulois {
 	
 	
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois ("Astérix", 8);
+		Gaulois asterix = new Gaulois ("AstÃ©rix", 8);
 		Romain minus = new Romain ("Minus", 6);
 		System.out.println(asterix.nom);
-		System.out.println(asterix);
 		
 		
 		asterix.parler("bonjour");
