@@ -35,8 +35,10 @@ public class Romain {
 	
 	public static void main (String[] args) {
 		Romain minus = new Romain ("Minus", 6);
+		
+		/* print of the romain name */
 		System.out.println(minus.nom);
-		System.out.println(minus);
+				
 		minus.parler("bonjour");
 		minus.recevoirCoup(6);
 	}
