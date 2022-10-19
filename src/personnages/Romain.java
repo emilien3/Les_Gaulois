@@ -23,6 +23,8 @@ public class Romain {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
+		assert force >0; 
+		int v = force ;
 		force -= forceCoup;
 		if (force > 0){
 			parler("Aie");
@@ -30,11 +32,14 @@ public class Romain {
 		else{
 			parler("J'abandonne...");
 		}
+		assert v> force ;
 	}
 	
 	
 	public static void main (String[] args) {
+		
 		Romain minus = new Romain ("Minus", 6);
+		assert minus.force >=0 ; 
 		
 		/* print of the romain name */
 		System.out.println(minus.nom);
