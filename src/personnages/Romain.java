@@ -85,7 +85,7 @@ public class Romain {
         assert force > 0;
         int oldForce = force;
         forceCoup = calculResistanceEquipement(forceCoup);
-        force -= forceCoup;
+        force = force - forceCoup;
         
         if (force > 0) { 
         	parler("Aïe");
@@ -118,7 +118,9 @@ public class Romain {
              texte+= resistanceEquipement + "!";
              }
         parler(texte);
-        forceCoup -= resistanceEquipement;
+
+        int testForceCoup = forceCoup;
+        testForceCoup -= resistanceEquipement;
         return forceCoup;
 }
 	
