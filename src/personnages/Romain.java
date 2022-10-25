@@ -119,9 +119,12 @@ public class Romain {
              }
         parler(texte);
 
-        int testForceCoup = forceCoup;
-        testForceCoup -= resistanceEquipement;
-        return forceCoup;
+        if (resistanceEquipement > forceCoup) {
+        	return 0;
+        }else {
+        	return forceCoup-= resistanceEquipement;
+        }
+        
 }
 	
 

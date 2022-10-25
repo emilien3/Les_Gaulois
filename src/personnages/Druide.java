@@ -34,7 +34,7 @@ public class Druide {
 	public void preparerPotion(){
 		Random ran = new Random();
 		
-		int forcePotion = ran.nextInt(effetPotionMax);
+		forcePotion = effetPotionMax - ran.nextInt(effetPotionMax - effetPotionMin);
 		
 		if (forcePotion > 7) {
 			parler("J'ai préparé une super potion de force "+ forcePotion);
