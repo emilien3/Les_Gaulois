@@ -49,7 +49,8 @@ public class Gaulois {
 			this.trophees[nbTrophees] = trophees[i];
 			}
 		
-		}
+
+	}
 
 
 
