@@ -65,6 +65,13 @@ public class Gaulois {
 		parler("Merci Druide, je sens que ma force est "+ effetPotion +" fois décuplée si la force de la potion est de "+ effetPotion);
 	}
 	
+	public void faireUneDonnation(Musee musee) {
+		if (trophees != null) {
+			for (int i =0; i< nbTrophees;i++ ) {
+				
+			}
+		}
+	}
 	
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois ("Astérix", 8);
