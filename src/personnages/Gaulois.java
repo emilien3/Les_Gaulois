@@ -33,7 +33,7 @@ public class Gaulois {
 	
 	private String prendreParole() {
         return "Le gaulois " + nom + " : ";
-}
+	}
 	
 	
 	/*public void frapper(Romain romain) {
@@ -78,7 +78,7 @@ public class Gaulois {
 			System.out.println("Le gaulois " + getNom() +" : << Je donne au musee tous mes trophees :\n" );
 			for (int i =0;i < nbTrophees ; i++) {
 				Equipement troph = trophees[i];
-				donnerTrophees( this, troph );
+				musee.donnerTrophees( this, troph );
 				System.out.println ("- "+ troph +"\n");
 			}
 			System.out.println(">>");
