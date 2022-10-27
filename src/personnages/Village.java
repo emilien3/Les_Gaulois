@@ -58,6 +58,8 @@ public class Village {
 		village.afficherVillageois();
 		
 		
+		
+		
 	}
 
 }

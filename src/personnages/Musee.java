@@ -1,13 +1,14 @@
 package personnages;
 
 public class Musee {
-	int nbTrophee = 0;
-	public Equipement [] tab = new Equipement[200];
+	
+	private int nbTrophee = 0;
+	private Trophee [] tab = new Trophee[200];
 
 	public void donnerTrophees(Gaulois gaulois , Equipement equipement) {
-		tab[nbTrophee] = equipement; 
-		nbTrophee++;
+		Trophee trophee = new Trophee(gaulois, equipement );
+		tab[nbTrophee] = trophee;
+		nbTrophee ++;
 	}
-
 }
 

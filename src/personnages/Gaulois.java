@@ -2,12 +2,11 @@ package personnages;
 
 public class Gaulois {
 	
-	Gaulois asterix;
 	
 	private String nom;
 	private int force;
 	private int nbTrophees;
-	public int effetPotion;	
+	private int effetPotion;	
     private Equipement[] trophees = new Equipement[100];
 	
 	
@@ -65,11 +64,27 @@ public class Gaulois {
 		parler("Merci Druide, je sens que ma force est "+ effetPotion +" fois décuplée si la force de la potion est de "+ effetPotion);
 	}
 	
+//	public void faireUneDonnation(Musee musee, ) {
+//		
+//		if (trophee != null) {
+//			for (int i = 0 ; i < Nbtrophee; i++) {
+//				
+//			}
+//		}
+//	}
+	
 	public void faireUneDonnation(Musee musee) {
-		if (trophees != null) {
-			for (int i =0; i< nbTrophees;i++ ) {
-				
+		if (nbTrophees != 0) {
+			System.out.println("Le gaulois " + getNom() +" : << Je donne au musee tous mes trophees :\n" );
+			for (int i =0;i < nbTrophees ; i++) {
+				Equipement troph = trophees[i];
+				donnerTrophees( this, troph );
+				System.out.println ("- "+ troph +"\n");
 			}
+			System.out.println(">>");
+		}
+		else {
+			System.out.println("Le gaulois "+ getNom() + " n'a pas de trophees");
 		}
 	}
 	

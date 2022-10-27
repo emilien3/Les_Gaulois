@@ -88,7 +88,7 @@ public class Romain {
         force = force - forceCoup;
         
         if (force > 0) { 
-        	parler("Aïe");
+        	parler("Aie");
 
              } else {
              equipementEjecte = ejecterEquipement();
@@ -96,7 +96,7 @@ public class Romain {
         }
         
         
-       // post condition la force à diminuer
+       // post condition la force a diminuer
        assert force < oldForce;
        return equipementEjecte;
 }
@@ -134,6 +134,7 @@ public class Romain {
 		int nbEquipementEjecte = 0;
 		for (int i = 0; i < nbEquipement; i++) {
 			if (equipements[i] == null) {
+				continue;
 				} else {
 					equipementEjecte[nbEquipementEjecte] =equipements[i];
 					nbEquipementEjecte++;
@@ -163,9 +164,6 @@ public class Romain {
 		minus.sEquiper(bouclier);
 		minus.sEquiper(casque);
 	
-		
-		
-		
 
 	}
 
