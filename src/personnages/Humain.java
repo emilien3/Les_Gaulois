@@ -4,12 +4,13 @@ public class Humain {
 	
 	private String nom ;
 	private String boisson ;
-	private int qttArgent ;
+	protected int qttArgent ;
 	
 	public Humain(String nom, String boisson, int qttArgent) {
 		this.nom = nom;
 		this.boisson = boisson;
 		this.qttArgent = qttArgent;
+		
 	}
 
 	public String getNom() {
@@ -25,10 +26,10 @@ public class Humain {
 	}
 	
 	private String prendreParole() {
-		return nom + " : ";
+		return "("+nom+")" + " - ";
 	}
 	
-	public void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println(prendreParole() + texte);
 	}
 	
@@ -41,7 +42,13 @@ public class Humain {
 	}
 	
 	public void acheter(String bien, int prix){
-		qttArgent -= prix ;
+		if (this.getQttArgent()>= prix){
+			this.parler("J'ai "+ this.getQttArgent()+" sous en poche. Je vais pouvoir m'offrir une boisson à " + prix + " sous.");
+			qttArgent -= prix ;
+			}
+		else {
+			this.parler("Je n'ai plus que "+ this.getQttArgent()+" sous en poche. Je ne peux même pas m'offrir un " + bien + " à " + prix + " sous.");
+		}
 	}
 	
 	public void gagnerArgent(int gain) {
@@ -50,6 +57,7 @@ public class Humain {
 	
 	public void perdreArgent(int perte) {
 		qttArgent -= perte;
+		
 	}
 	
 	
