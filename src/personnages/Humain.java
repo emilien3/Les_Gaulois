@@ -33,7 +33,7 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m’appelle " + getNom() +" et j’aime boire du " + getBoisson() );
+		parler("Bonjour ! Je mï¿½appelle " + getNom() +" et jï¿½aime boire du " + getBoisson() );
 	}
 	
 	public void boire() {
@@ -51,6 +51,8 @@ public class Humain {
 	public void perdreArgent(int perte) {
 		qttArgent -= perte;
 	}
+	
+	
 
 	
 	
