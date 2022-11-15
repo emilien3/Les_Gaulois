@@ -40,9 +40,9 @@ public class Humain {
 		parler( "Mmmm, un bon verre de " + getBoisson()+ " ! GLOUPS !") ;
 	}
 	
-//	public void acheter(String bien, int prix){
-//		qttArgent = ;
-//	}
+	public void acheter(String bien, int prix){
+		qttArgent -= prix ;
+	}
 	
 	public void gagnerArgent(int gain) {
 		qttArgent += gain;
