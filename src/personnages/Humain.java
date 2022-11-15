@@ -33,7 +33,7 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m�appelle " + getNom() +" et j�aime boire du " + getBoisson() );
+		parler("Bonjour ! Je m'appelle " + getNom() +" et j'aime boire du " + getBoisson() );
 	}
 	
 	public void boire() {
