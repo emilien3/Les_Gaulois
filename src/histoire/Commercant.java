@@ -11,6 +11,7 @@ public class Commercant extends Humain  {
 	// La première est d'utiliser le .getQttArgent() qui est une methode publique   
 	// La deuxième est de mettre l'attribut argent en protected pour pouvoir l'appeler
 	
+	
 	public int seFaireEscroquer() {
 		this.perdreArgent(this.qttArgent);
 		this.parler("J'ai tout perdu! Le monde est trop injuste... ");

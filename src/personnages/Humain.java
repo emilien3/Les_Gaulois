@@ -10,7 +10,6 @@ public class Humain {
 		this.nom = nom;
 		this.boisson = boisson;
 		this.qttArgent = qttArgent;
-		
 	}
 
 	public String getNom() {
@@ -24,6 +23,7 @@ public class Humain {
 	public int getQttArgent() {
 		return qttArgent;
 	}
+
 	
 	private String prendreParole() {
 		return "("+nom+")" + " - ";
