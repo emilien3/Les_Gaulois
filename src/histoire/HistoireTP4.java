@@ -1,5 +1,4 @@
 package histoire;
-import personnages.Humain;
 
 public class HistoireTP4 {
 
